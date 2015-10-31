@@ -65,6 +65,10 @@ app.post('/api/updateUser', User.updateUser);
 app.get('/', passportConfig.ensureAuthenticated, function(req, res){
   res.sendFile('/html/midterm.html', {root : './public'})
 });
+
+app.get('/editPage', function(req, res){
+  res.sendFile('/html/global.html', {root : './public'})
+});
 // app.get('/superSensitiveDataRoute') 
 // Routes \\
 
