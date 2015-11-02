@@ -55,13 +55,6 @@ app.post('/api/profile', User.createUser);
 
 app.post('/api/updateUser', User.updateUser);
 
-
-
-
-
-// app.get('/homepage', );
-
-
 app.get('/', passportConfig.ensureAuthenticated, function(req, res){
   res.sendFile('/html/midterm.html', {root : './public'})
 });
@@ -69,6 +62,22 @@ app.get('/', passportConfig.ensureAuthenticated, function(req, res){
 app.get('/editPage', function(req, res){
   res.sendFile('/html/global.html', {root : './public'})
 });
+
+// app.get('/logout', function(req, res){
+// 	res.sendFile('/html/logout.html', {root : './public'})
+// });
+//the above route is not applicable if you get the one below working!!
+
+
+app.get('/logout', function(req, res){
+ req.logout();
+ res.sendFile('/html/logout.html', {root : './public'})
+});
+
+// app.post('/editPage', function(req, res){
+// 	res.sendFile('/html/global.html', {root : './public'})
+// })
+
 // app.get('/superSensitiveDataRoute') 
 // Routes \\
 
@@ -78,9 +87,6 @@ app.get('/editPage', function(req, res){
 // });
 
 // app.get('/profiles', function(req, res){
-//   res.sendFile('/html/index.html', {root : './public'})
-// });
-// app.get('/animals', function(req, res){
 //   res.sendFile('/html/index.html', {root : './public'})
 // });
 
@@ -102,7 +108,6 @@ app.get('/editPage', function(req, res){
 //     // Everything went fine
 //   })
 // })
-
 // app.post('/test', upload.single('foo'), function(req, res){
 //   console.log(req.file)
 //   res.send('...')

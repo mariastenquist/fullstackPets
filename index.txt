@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html  lang="en">
-<!-- 	ng-app='petApp' -->
+<html ng-app='petApp' lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Tail</title>

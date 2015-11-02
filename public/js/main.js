@@ -1,23 +1,4 @@
-
-
-
-
-
-
-angular.module('midtermApp', ['mdl', 'ngAnimate']);
-
-
-		var map;
-		function initMap() {
-   
-    			var mapOptions = {
-        			zoom: 14,
-        			center: new google.maps.LatLng(40.018005,-105.278430),
-    			}
-
-   				map = new google.maps.Map(document.getElementById('map'),mapOptions);
-   		}
-
+angular.module('midtermApp', ['mdl']);
 
 
 angular.module('midtermApp').factory('userGen', [function (){
@@ -57,9 +38,6 @@ angular.module('midtermApp').controller('mainController', ['$scope','userGen','$
 	// $scope.hello = "hello world"
 	$scope.usersList = userGen.usersList
 	console.log($scope.usersList)
-	// userGen.usersList[0].rating = 5
-	// userGen.usersList[0].foto = './images/dog6.jpg'
-
 	// $timeout(function(){}
 
 	$scope.checkFilter = function(){
@@ -116,7 +94,6 @@ angular.module('midtermApp').controller('mainController', ['$scope','userGen','$
 	$scope.showIntro = true;
 
 
-// -------------------------
 	$scope.sign = function($index){
 
 		$scope.showSide = !scope.showSide;
@@ -125,8 +102,5 @@ angular.module('midtermApp').controller('mainController', ['$scope','userGen','$
 	$scope.signOut = function($index){ 
 			$scope.showSide = !scope.showSide;
 	} 
-
-
-		
 
 }])

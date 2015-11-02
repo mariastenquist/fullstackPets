@@ -34,7 +34,6 @@ angular.module('petApp')
 	.controller('editController', ['$scope', '$http', function($scope, $http){
 		$scope.user = {};
 		// console.log('hello')
-		// 
 		$scope.editUser = function(){
 			console.log('this', this)
 			$http.post('/api/updateUser/', this.user)
@@ -50,17 +49,21 @@ angular.module('petApp')
 				})
 
 
-		// $scope.user = function(){
-		
-		// }
-		// $scope.user()
-
 		// $scope.grabUser = function(){
 		// 	var username = "nameofProfile"
-		// 	$http.get('/api/me/' + username)
-		// 		.then(function(returnData){
-		// 			$scope.user = returnData.data
-		// 		})
+		// 	http.post('/api/updateUser', this.user)
+		// 	.success(function(){
+		// 		window.location.href="/";
+		// 	})
 		// }
 
+		// $http.get('/' + username)
+		// 	.then(function(returnData){
+		// 		$scope.user = returnData.data
+		// 	})
+
+
 	}])
+
+
+

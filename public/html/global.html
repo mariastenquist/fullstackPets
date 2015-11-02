@@ -27,12 +27,12 @@
     <h5>{{user.email}}</h5>
     <h5>{{user.zipcode}}</h5>
     <div>
-    {{user.profilePic}}
+    <img src="{{user.profilePic}}">
     </div>
+   
     
 
     <form class="pure-form pure-form-alignedTwo" ng-submit="editUser()">
-<!--       //not sure if ng-submit function is pulling $scope.user -->
       <fieldset>
       <h5>Welcome Back: {{user.username}}!</h5>
           <div class="pure-control-group">
@@ -64,13 +64,6 @@
           </div>
       </fieldset>
 </form>
-
-    <div ng-view>
-      <!-- Our templates will be injected here -->
-    </div>
-
-
-
 
 
     <script src="../js/home.js"></script>

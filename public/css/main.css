@@ -1,7 +1,6 @@
 .demo-layout-transparent {
   background: url(../images/dog1.jpg) center / cover;  
   position: relative;
- /*opacity: .5;*/
 }
 
 .demo-layout-transparent .mdl-layout__header,
@@ -35,7 +34,6 @@
 }
 
 .mainFooter{
-	border-radius: 8px;
 	color: white;
   width: 100%;
 }
@@ -76,7 +74,7 @@
 }
 
 .mdl-cell.mdl-cell--3-col {
-  background-color: rgba(128,128,128, .7);
+/*  background-color: rgba(128,128,128, .7);*/
   height: auto;
  /* opacity: .7;*/
   border-radius: 10px;
@@ -126,11 +124,17 @@
   padding: 15px;
   text-align: center;
 }
-/*this is for the logged in edit user/
+/*this is for the logged in edit user*/
 
+.pure-form.pure-form-alignedThree{
+  height: 750px;
+  text-align: center;
+  padding: 100px;
+  background: url("../images/dog8.jpg") center / cover;
 
+}
 
-h6{
+/*h6{
   font-style: bold;
   color: white;
 
@@ -138,7 +142,7 @@ h6{
 
 h5{
   color: green;
-}
+}*/
 /*#map{
   height: 430px;
   width: 430px;

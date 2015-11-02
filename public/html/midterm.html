@@ -4,19 +4,18 @@
   <meta charset="utf-8">
   <title>Tail</title>
 
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+
   	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.orange-light_blue.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   	<link href="../lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
   	<script src="https://use.fonticons.com/1729dfc4.js"></script>
-  <!-- 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
   	<link rel="stylesheet" href="../css/animate.css">
   	<link rel="stylesheet" type="text/css" href="../css/main.css">
 
  </head>
 
 
-<body ng-controller="mainController">
+<body ng-controller="mainController" ng-cloak>
 
 
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
@@ -31,11 +30,7 @@
 			  <div class="mdl-card__supporting-text">
 			    {{selectedAnimalTag}}
 			  </div>
-			  <!-- <div> -->
-			  <!-- {{selectedAnimalFoto}} -->
-			 <!-- <style="background: url({{selectedAnimalFoto}})"> -->
-			<!-- </div> -->
-
+		
 	
 			  <form action="#">
 			    <div class="mdl-textfield mdl-js-textfield">
@@ -107,18 +102,20 @@
 	        <a class="mdl-navigation__link" href="./extras.html">Sign In</a>
 	      </nav>
 	      <div>
-	      <!--   <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-		
-			    </button> -->
+	        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+			</button>
 
 			        <a href="/editPage">edit</a>
+
+			        <a href="/logout">Logout</a>
+
+	
 		  </div>
 	      		<div> 
 					<i class="icon icon-twitter icon-2x"></i> 
 					<i class="icon icon-facebook-square icon-2x"></i> 
 					<i class="icon icon-google-plus-square icon-2x"></i>
 					<img class="logo2" src="./images/blueTail.png"> 
-					<h5> Welcome Back Animal Lover!!</h5>
 				</div>
 	    </div>
 	  </header>
@@ -149,7 +146,7 @@
 			  	<div class="mdl-card__title">
 			  	</div>
 				<div class="mdl-card__supporting-text">
-						<h3>Welcome to the Tail Community! <img class="logo" src="./images/blueTail.png"></h3>
+						<h5>Welcome to the Tail Community! <img class="logo" src="./images/blueTail.png"></h5>
 						<p>"Do you love pets? Then you've come to the right spot! Come browse our lovable pets and read about their stories! Make friends, mingle, and take part in showcasing your pet. Here, pets are stars!"</p>
 						<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" ng-click="toggleintroLandingPage()">
 		  					<i class="material-icons">remove circle</i>
@@ -170,8 +167,7 @@
 			<option value="non-furry">non-furry</option>
 			<option value="friends">friends</option>
 
-		<!-- <select ng-model="myColor" ng-options="color.name for color in colors"> -->
-		<!-- <select ng-model="filterAnimal"  ng-options="user.types group by user.types for user in usersList">
+
 		 -->
 		</select>
 
@@ -206,8 +202,8 @@
 
 	  <div class="mdl-cell mdl-cell--3-col"> 
 
-	      <h6>
-			"This section gives a description of the Tail community and what we are about! Tail is a platform to showcase the awesome adventures of pets and their petowners. Mostly about the pets, really, but I suppose it wouldn't be the same without their human friends too! Here pets rule. Within these walls are special tales and adventures of our furry (and not so furry) pals. Grab your coffee, pull on your comfy slippers and indulge in  There is a section for pet owners to meet in real life, and have their super cool pets mingle too. Come check out our awesome paw-stars! "</h6>
+	 <!--      <h6>
+			"This section gives a description of the Tail community and what we are about! Tail is a platform to showcase the awesome adventures of pets and their petowners. Mostly about the pets, really, but I suppose it wouldn't be the same without their human friends too! Here pets rule. Within these walls are special tales and adventures of our furry (and not so furry) pals. Grab your coffee, pull on your comfy slippers and indulge in  There is a section for pet owners to meet in real life, and have their super cool pets mingle too. Come check out our awesome paw-stars! "</h6> -->
 
 	  </div>  <!-- closes content for column 2 -->
 
@@ -245,11 +241,9 @@
 
 <!--   	// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular-animate.js"></script>
 	<script type="text/javascript" src="../angular-material-design-lite.min.js"></script>
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdRaE_UJn9YLmIUPnhQlXiN0AkxaifIOQ&callback=initMap">
-   		</script>
+
  	<script src="../js/main.js"></script>
 </body>
 </html>
