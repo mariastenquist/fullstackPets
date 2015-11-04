@@ -169,9 +169,6 @@
 			<option value="cat">cat</option>
 			<option value="non-furry">non-furry</option>
 			<option value="friends">friends</option>
-
-
-		 -->
 		</select>
 
 	  		  <div class="demo-card-wide mdl-card mdl-shadow--2dp" ng-repeat="user in usersList | filter: {types : filterAnimal}">
@@ -183,9 +180,6 @@
 			    {{user.tagLine}}	
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
-			  	<!-- <i class="icon icon-paw icon-2x"></i>
-			  	<span>{{}} -->
-			 <!--  	ng-repeat="paw in pawsArray" -->
 			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="selectedAnimal($index)">
 			      View Profile
 			    </a>
@@ -227,7 +221,7 @@
 	    <div class="mdl-logo">Tail</div>
 	    <ul class="mdl-mini-footer__link-list">
 	      <li><a href="#">Help</a></li>
-	      <li><a href="#">Profiles</a></li>
+	      <li><a href="/editPage">Profiles</a></li>
 	      <li><a href="#">Connect</a></li>
 	      <li><a href="/logout">Sign Out</a></li>
 	    </ul>
@@ -242,8 +236,6 @@
 		</div> <!-- this closes the GRID  -->
 	</main> <!-- closes main mdl layout content -->
 </div>   <!-- closes the demo-mdl layout outer div!! -->
-
-<!--   	// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script> -->
  	<script src="../js/main.js"></script>
 </body>
 </html>
