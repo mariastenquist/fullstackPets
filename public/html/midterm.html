@@ -11,6 +11,11 @@
   	<script src="https://use.fonticons.com/1729dfc4.js"></script>
   	<link rel="stylesheet" href="../css/animate.css">
   	<link rel="stylesheet" type="text/css" href="../css/main.css">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js">
+  	</script>
+	<script type="text/javascript" src="../angular-material-design-lite.min.js"></script>
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+
 
  </head>
 
@@ -97,43 +102,41 @@
 	      <!-- Navigation -->
 	      <nav class="mdl-navigation">
 	        <a class="mdl-navigation__link" href="">About</a>
-	        <a class="mdl-navigation__link" href="">Profiles</a>
+	        <a class="mdl-navigation__link" href="/editPage"> Edit Profile</a>
 	        <a class="mdl-navigation__link" href="">Contact</a>
-	        <a class="mdl-navigation__link" href="./extras.html">Sign In</a>
+	        <a class="mdl-navigation__link" href="/logout">Sign Out</a>
 	      </nav>
 	      <div>
 	        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
 			</button>
 
-			        <a href="/editPage">edit</a>
-
-			        <a href="/logout">Logout</a>
-
-	
+			        <!-- <a href="/editPage">edit</a> -->
+<!-- 
+			        <a href="/logout">Logout</a> -->
 		  </div>
 	      		<div> 
 					<i class="icon icon-twitter icon-2x"></i> 
 					<i class="icon icon-facebook-square icon-2x"></i> 
 					<i class="icon icon-google-plus-square icon-2x"></i>
-					<img class="logo2" src="./images/blueTail.png"> 
+					<img class="logo2" src="../images/blueTail.png"> 
 				</div>
 	    </div>
 	  </header>
 
 	<!-- Drawer -->
 	  <div class="mdl-layout__drawer">
-	    <span class="mdl-layout-title"><img class="logo1" src="./images/blueTail.png"></span>
+	    <span class="mdl-layout-title"><img class="logo1" src="../images/blueTail.png"></span>
 
 	    <nav class="mdl-navigation">
 	      <a class="mdl-navigation__link" href="">About</a>
-	      <a class="mdl-navigation__link" href="">Profiles</a>
+	      <a class="mdl-navigation__link" href="/editPage"> Edit Profile</a>
 	      <a class="mdl-navigation__link" href="">Contact</a>
-	      <a class="mdl-navigation__link" href="./extras.html">Sign In</a>
+	      <a class="mdl-navigation__link" href="/logout">Sign Out</a>
 	    </nav>
 	    	<div> 
-					<i class="icon icon-twitter icon-lg"></i> 
-					<i class="icon icon-facebook-square icon-lg"></i> 
-					<i class="icon icon-google-plus-square icon-lg"></i> 
+					<i class="icon icon-twitter icon-2x"></i> 
+					<i class="icon icon-facebook-square icon-2x"></i> 
+					<i class="icon icon-google-plus-square icon-2x"></i> 
 			</div>
 	  </div>
 
@@ -146,7 +149,7 @@
 			  	<div class="mdl-card__title">
 			  	</div>
 				<div class="mdl-card__supporting-text">
-						<h5>Welcome to the Tail Community! <img class="logo" src="./images/blueTail.png"></h5>
+						<h5>Welcome to the Tail Community! <img class="logo" src="../images/blueTail.png"></h5>
 						<p>"Do you love pets? Then you've come to the right spot! Come browse our lovable pets and read about their stories! Make friends, mingle, and take part in showcasing your pet. Here, pets are stars!"</p>
 						<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" ng-click="toggleintroLandingPage()">
 		  					<i class="material-icons">remove circle</i>
@@ -158,8 +161,8 @@
 
 	  <div class="mdl-grid">
 	<!--   COLUMN 1: LEFT -->
-	  	<div class="mdl-cell mdl-cell--6-col">Select User Type
-		<input ng-model="filterAnimal">Animal Type
+	  	<div class="mdl-cell mdl-cell--6-col"><span>Select User Type</span>
+		<input ng-model="filterAnimal"><span>Animal Type</span>
 		
 		<select ng-change="checkFilter()" ng-model="filterAnimal">
 			<option value="dog">dog</option>
@@ -226,6 +229,7 @@
 	      <li><a href="#">Help</a></li>
 	      <li><a href="#">Profiles</a></li>
 	      <li><a href="#">Connect</a></li>
+	      <li><a href="/logout">Sign Out</a></li>
 	    </ul>
 	  </div>
 	  			<div> 
@@ -240,10 +244,6 @@
 </div>   <!-- closes the demo-mdl layout outer div!! -->
 
 <!--   	// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
-	<script type="text/javascript" src="../angular-material-design-lite.min.js"></script>
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
-
  	<script src="../js/main.js"></script>
 </body>
 </html>

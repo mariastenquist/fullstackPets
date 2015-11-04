@@ -15,9 +15,12 @@
 }
 
 .icon{
-	padding: 25px;
+	padding: 15px;
+  color: #F4B415;
+/*  color: white;*/
 	
 }
+
 
 .demo-card-wide.mdl-card {
   width: auto;
@@ -121,7 +124,7 @@
 }
 
 .pure-control-group{
-  padding: 15px;
+  padding: 20px;
   text-align: center;
 }
 /*this is for the logged in edit user*/
@@ -131,21 +134,34 @@
   text-align: center;
   padding: 100px;
   background: url("../images/dog8.jpg") center / cover;
-
-}
-
-/*h6{
-  font-style: bold;
+  font-weight: bolder;
   color: white;
 
 }
 
-h5{
-  color: green;
+h6{
+  font-weight: bold;
+/*  font-style: bold;
+*/  color: #F4B415;
+  font-size: 20px;
+  text-shadow:   
+    -1px -1px 0 #000000 ,
+   1px -1px 0 #000000 ,
+   -1px 1px 0 #000000 ,
+   1px 1px 0 #000000 ;
+
+}
+
+/*p{
+  color:#F4B415;
+  font-weight: bold;
+   text-shadow:   
+    -1px -1px 0 #000000 ,
+   1px -1px 0 #000000 ,
+   -1px 1px 0 #000000 ,
+   1px 1px 0 #000000 ;
 }*/
-/*#map{
-  height: 430px;
-  width: 430px;
-  margin: auto;
-  top: 30px;
+
+/*h5{
+  color: green;
 }*/
